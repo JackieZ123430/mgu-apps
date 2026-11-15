@@ -43,6 +43,12 @@ Each app is worked on from its own folder, as before: `cd true-time` (or `ecu-li
 2. Add an entry to `mgu-repo.json` with the app's id, its `path` (`<folder>/app`) and the same `build` as the others.
 3. Commit, push and, for the **Tags** channel, tag a new release (`git tag v1.1.0 && git push --tags`).
 
+## Disclaimer
+
+- **Not affiliated with BMW.** This is an independent, non-commercial project. It is not made, endorsed, supported or approved by BMW AG or any of its companies. BMW, iDrive and the names of BMW's models and control units are trademarks of BMW AG, used here only to say which cars and head units the software is for. No BMW logo, BMW software, BMW SDK or BMW data is part of this repository.
+- **Read-only.** The apps only read values the car already provides; they never write to, code or flash a control unit, and they do not unlock or bypass any paid or protected function of the car.
+- **At your own risk.** The software is provided "as is", without warranty of any kind (see LICENSE). Installing custom apps needs a modified head unit, which may affect the vehicle's warranty, and the values shown are estimates from the car's sensors. Use it only where it is legal and safe: performance runs only on closed courses, never on public roads, and don't operate the screen while driving.
+
 ## Licence
 
 MIT ([LICENSE](LICENSE)). Each app keeps its own LICENSE in its folder (ECU Live Data keeps Boostline's original copyright); the vendored kit and Boostline keep theirs. Not affiliated with or endorsed by BMW. All trademarks belong to their owners.

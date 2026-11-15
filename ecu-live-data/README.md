@@ -526,6 +526,12 @@ tools/                setup.js, bundle.js, emu.js, build-car.js, node8.js
 ../vendor/idrive7-apps the MGU app kit, emulator and installer, shared by every app of the collection
 ```
 
+## Disclaimer
+
+- **Not affiliated with BMW.** This is an independent, non-commercial project. It is not made, endorsed, supported or approved by BMW AG or any of its companies. BMW, iDrive and the names of BMW's models and control units are trademarks of BMW AG, used here only to say which cars and head units the software is for. No BMW logo, BMW software, BMW SDK or BMW data is part of this repository.
+- **Read-only.** The apps only read values the car already provides; they never write to, code or flash a control unit, and they do not unlock or bypass any paid or protected function of the car.
+- **At your own risk.** The software is provided "as is", without warranty of any kind (see LICENSE). Installing custom apps needs a modified head unit, which may affect the vehicle's warranty, and the values shown are estimates from the car's sensors. Use it only where it is legal and safe: performance runs only on closed courses, never on public roads, and don't operate the screen while driving.
+
 ## Licence
 
 MIT, like Boostline and the idrive7-apps kit. See [LICENSE](LICENSE): the original copyright (Boostline contributors) stays, ECU Live Data's changes are giuseppesalatino-boop's.

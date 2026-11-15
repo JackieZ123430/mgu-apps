@@ -82,6 +82,12 @@ Runs are saved one file each in `/var/opt/public/oap/oap_<uid>/data/runs/`, with
 - **The car's road gradient signal** (`VehicleModel.LaneSlope`): it went 1872, 2128, 2384, 2640 (0x0750 to 0x0A50, always +256) during a drive: perhaps a counter or another byte of the message. The Setup page shows the number in hex and the whole message.
 - The run start and end thresholds (3 km/h rise for a rolling start, 1 km/h in 1 s for the end, 0.24 g for braking) against more gear changes.
 
+## Disclaimer
+
+- **Not affiliated with BMW.** This is an independent, non-commercial project. It is not made, endorsed, supported or approved by BMW AG or any of its companies. BMW, iDrive and the names of BMW's models and control units are trademarks of BMW AG, used here only to say which cars and head units the software is for. No BMW logo, BMW software, BMW SDK or BMW data is part of this repository.
+- **Read-only.** The apps only read values the car already provides; they never write to, code or flash a control unit, and they do not unlock or bypass any paid or protected function of the car.
+- **At your own risk.** The software is provided "as is", without warranty of any kind (see LICENSE). Installing custom apps needs a modified head unit, which may affect the vehicle's warranty, and the values shown are estimates from the car's sensors. Use it only where it is legal and safe: performance runs only on closed courses, never on public roads, and don't operate the screen while driving.
+
 ## Credits
 
 Built on [idrive7-apps](https://github.com/cauliflowermossgrape/idrive7-apps) by cauliflowermossgrape (MIT): the runtime, the GPU renderer, the emulator and the installer, vendored in `vendor/idrive7-apps` without the parts True Time doesn't use ([VENDORED.md](../vendor/idrive7-apps/VENDORED.md)). Not affiliated with or endorsed by BMW. All trademarks belong to their owners.

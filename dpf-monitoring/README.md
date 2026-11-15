@@ -18,6 +18,12 @@ From a PC, with BMW's SDK in the collection's `vendor/idrive7-apps/oap-sdk/`: `n
 
 From this folder: `npm run emu`, then open http://localhost:8077. Without a DDE to answer, the app shows its demo values.
 
+## Disclaimer
+
+- **Not affiliated with BMW.** This is an independent, non-commercial project. It is not made, endorsed, supported or approved by BMW AG or any of its companies. BMW, iDrive and the names of BMW's models and control units are trademarks of BMW AG, used here only to say which cars and head units the software is for. No BMW logo, BMW software, BMW SDK or BMW data is part of this repository.
+- **Read-only.** The apps only read values the car already provides; they never write to, code or flash a control unit, and they do not unlock or bypass any paid or protected function of the car.
+- **At your own risk.** The software is provided "as is", without warranty of any kind (see LICENSE). Installing custom apps needs a modified head unit, which may affect the vehicle's warranty, and the values shown are estimates from the car's sensors. Use it only where it is legal and safe: performance runs only on closed courses, never on public roads, and don't operate the screen while driving.
+
 ## Licence
 
 MIT ([LICENSE](LICENSE)). Built on [idrive7-apps](https://github.com/cauliflowermossgrape/idrive7-apps) by cauliflowermossgrape (MIT), from its DPF Monitor. Not affiliated with or endorsed by BMW.

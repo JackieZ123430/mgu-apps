@@ -6,6 +6,7 @@ Apps for the BMW iDrive 7 (MGU) head unit by [giuseppesalatino-boop](https://git
 |---|---|---|
 | **True Time** | [`true-time/`](true-time) | Acceleration and braking times, measured and corrected for the road's slope (the DSC's acceleration sensor) |
 | **ECU Live Data** | [`ecu-live-data/`](ecu-live-data) | Live engine data from the DDE (diesel) or DME (petrol), CSV logs, road dyno and drag timer, read-only. A fork of [boostline-idrive](https://github.com/clucraft/boostline-idrive) (MIT) |
+| **DPF Monitoring** | [`dpf-monitoring/`](dpf-monitoring) | The diesel particulate filter in the iDrive 7 look: soot and ash load, regenerations, differential pressure and exhaust temperatures from the DDE, read-only |
 
 ## Install from the MGU Store
 
@@ -29,9 +30,10 @@ vendor/boostline      Boostline's engine code for ECU Live Data (MIT)
 patches/              the kit's patch (the emulator on Windows, its diagnostics hook)
 true-time/            True Time: app/, tools/ (setup, emu, build-car), test/, README
 ecu-live-data/        ECU Live Data: app/, core/, emu/, tools/, test/, README
+dpf-monitoring/       DPF Monitoring: app/, tools/ (setup, emu, build-car), README
 ```
 
-Each app is worked on from its own folder, as before: `cd true-time` (or `ecu-live-data`), then `npm install` (ECU Live Data only), `npm run emu`, `npm test`, `npm run build:car`. See each app's README.
+Each app is worked on from its own folder, as before: `cd true-time` (or `ecu-live-data`, `dpf-monitoring`), then `npm install` (ECU Live Data only), `npm run emu`, `npm test`, `npm run build:car`. See each app's README.
 
 **No BMW software in this repository.** BMW's oap-sdk, built car packages (`.mgu`, `dist/`) and BMW's DME data (`bmw-dme-data.json`) are never committed (see `.gitignore`).
 

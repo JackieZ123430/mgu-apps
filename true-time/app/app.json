@@ -2,7 +2,7 @@
   "id": "true_time",
   "title": "True Time",
   "description": "Acceleration and braking times corrected for the road's slope (the DSC's acceleration sensor)",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "vendor": "giuseppesalatino-boop",
   "loggingId": "OAB7",
   "iconGlyph": "flag",

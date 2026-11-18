@@ -4,7 +4,7 @@
 
 ![Acceleration: speed and elevation during a run](docs/acceleration.png)
 
-> **Status (0.3.0):** in use on a car (G31 520d, B47 DDE), installed from the MGU Store: runs, the DSC slope and the correction work. The engine unit's barometer is gone (the DDE's stayed put while driving), and with it Power on: the app reads only the car's own signals.
+> **Status (1.0.0):** in use on a car (G31 520d, B47 DDE), installed from the MGU Store: runs, the DSC slope and the correction work. The engine unit's barometer is gone (the DDE's stayed put while driving), and with it Power on: the app reads only the car's own signals.
 
 ## What it does
 

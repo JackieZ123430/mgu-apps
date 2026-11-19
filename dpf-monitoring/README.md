@@ -8,7 +8,7 @@ The diesel particulate filter of a BMW diesel on the iDrive 7 (MGU) head unit, i
 - **Regeneration** (off by default; Settings > Experimental): the coolant and exhaust temperatures, the distance since the last regeneration and the lock status, against reference values. Information only: its button is a placeholder, and no regeneration is ever requested.
 
 **1.1.0 is [sas46's DPF Monitor](https://github.com/sas46/idrive7_dpf_app) 0.1.6** (MIT), with this collection's icon, id and name. Over 1.0.0 it brings:
-- the regeneration request (`44BB` = 6, *Regeneration requested*, waiting for the right conditions) told apart from a running regeneration (`44BB` = 4); any other value shows *Regeneration status unknown* with the value. This mapping was observed on sas46's car (X5 G05 25d) and may differ on other DDEs;
+- the regeneration request (`44BB` = 6, *Regeneration requested*, waiting for the right conditions) told apart from a running regeneration (`44BB` = 4); this mapping was observed on sas46's car (X5 G05 25d) and may differ on other DDEs, so from 1.1.1 any other value but 0 still counts as a running regeneration, as in 1.0.0 (seen, timed and logged), with the value shown under it;
 - the engine coolant temperature from the car's bus (`CDS.statusEngineTemperature`);
 - the experimental Regeneration page above;
 - in the full-screen layout, the pages only as tabs (no second row of the same buttons at the bottom); Full screen is now the default layout.

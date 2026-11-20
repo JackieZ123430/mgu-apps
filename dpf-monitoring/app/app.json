@@ -2,7 +2,7 @@
   "id": "dpf_id7",
   "title": "DPF Monitoring",
   "description": "Diesel particulate filter in the iDrive 7 look: soot and ash load, regenerations (live, interrupted, history), differential pressure and exhaust temperatures from the diesel engine unit (DDE), read-only",
-  "version": "0.1.1",
+  "version": "1.1.1",
   "vendor": "custom",
   "loggingId": "OAB2",
   "iconGlyph": "DPF",
@@ -11,6 +11,9 @@
       "_instances": "SystemFunctionsInternalTasuInst1",
       "_methods": ["sendTasuRequest"],
       "_broadcasts": ["sendTasuResponse"]
+    },
+    "de.bmw.infotainment.vehicle.CDS": {
+      "statusEngineTemperature": "rs"
     }
   },
   "screens": [
@@ -37,12 +40,13 @@
      "options": [["c", "Celsius"], ["f", "Fahrenheit"]]},
     {"key": "accent", "label": "Highlight colour", "type": "choice", "default": "red",
      "options": [["red", "Red"], ["blue", "Blue"], ["orange", "Orange"]]},
-    {"key": "layout", "label": "Screen layout", "type": "choice", "default": "standard",
+    {"key": "layout", "label": "Screen layout", "type": "choice", "default": "full",
      "options": [["standard", "iDrive (title and buttons by the HMI)"], ["full", "Full screen"]]},
     {"key": "renderer", "label": "Renderer", "type": "choice", "default": "auto",
      "options": [["auto", "GPU 60 fps (default)"], ["software", "Software"]]},
     {"key": "demo", "label": "Demo data", "type": "choice", "default": "auto",
-     "options": [["auto", "Auto"], ["on", "Always"], ["off", "Never"]]}
+     "options": [["auto", "Auto"], ["on", "Always"], ["off", "Never"]]},
+    {"key": "experimentalRegen", "label": "Enable regeneration page", "group": "Experimental", "type": "bool", "default": false}
   ],
   "config": {
     "comment": "Diesel engine unit (DDE, ecu 18 = 0x12), UDS 0x22 ReadDataByIdentifier only. Identifiers from the public EdiabasX SGBD reference: D83BX7C0 (DDE 8.3, B37 / B47 / B57 in the G series) and D75BX7A0 list the same ones for the DPF. value = raw * factor + offset; bytes = big-endian length; candidates are tried in order, the first plausible one wins. If a value says 'not available on this car', look up your DDE's SGBD (Live Data > Units shows its index) and put its DID here.",

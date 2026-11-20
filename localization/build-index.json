@@ -1,0 +1,23 @@
+{
+  "source": "https://github.com/JackieZ123430/mgu-apps",
+  "apps": {
+    "boostline_cn": {
+      "path": "ecu-live-data/app",
+      "kitRoot": "vendor/idrive7-apps",
+      "version": "1.0.101",
+      "upstreamVersion": "1.0.1"
+    },
+    "dpf_id7_cn": {
+      "path": "dpf-monitoring/app",
+      "kitRoot": "vendor/idrive7-apps",
+      "version": "1.1.101",
+      "upstreamVersion": "1.1.1"
+    },
+    "true_time_cn": {
+      "path": "true-time/app",
+      "kitRoot": "vendor/idrive7-apps",
+      "version": "1.0.1",
+      "upstreamVersion": "1.0.0"
+    }
+  }
+}

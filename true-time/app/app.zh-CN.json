@@ -1,0 +1,121 @@
+{
+  "id": "true_time_cn",
+  "title": "精准计时",
+  "description": "通过 DSC 加速度信号修正坡度，记录加速和制动测试。",
+  "version": "1.0.1",
+  "vendor": "giuseppesalatino-boop",
+  "loggingId": "OAB7",
+  "iconGlyph": "flag",
+  "maxDiskUsage": 67108864,
+  "signals": {
+    "de.bmw.infotainment.vehicle.Vehicle2": {
+      "statusCarSpeed2": "rs"
+    },
+    "de.bmw.infotainment.vehicle.CDS2": {
+      "statusLongitudinalAccelerationMassCenter": "rs"
+    },
+    "de.bmw.chassis.VehicleModel": {
+      "_optional": "the car's own road gradient signal, shown raw on the Setup page for working it out",
+      "LaneSlope": "s"
+    }
+  },
+  "screens": [
+    {
+      "name": "MAIN",
+      "kind": "canvas",
+      "title": "精准计时",
+      "buttons": [
+        [
+          "BTN_ARM",
+          "准备测量"
+        ],
+        [
+          "BTN_PAGE",
+          "下一页"
+        ],
+        [
+          "BTN_SETTINGS",
+          "设置"
+        ]
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "key": "theme",
+      "label": "配色主题",
+      "type": "choice",
+      "default": "m_tricolour",
+      "options": [
+        [
+          "m_red",
+          "赛车红"
+        ],
+        [
+          "m_tricolour",
+          "三色"
+        ],
+        [
+          "ice",
+          "冰晶白"
+        ],
+        [
+          "amber",
+          "夜间琥珀"
+        ]
+      ]
+    },
+    {
+      "key": "layout",
+      "label": "屏幕布局",
+      "type": "choice",
+      "default": "full",
+      "options": [
+        [
+          "full",
+          "全屏"
+        ],
+        [
+          "standard",
+          "标准"
+        ]
+      ]
+    },
+    {
+      "key": "renderer",
+      "label": "渲染器",
+      "type": "choice",
+      "default": "auto",
+      "options": [
+        [
+          "auto",
+          "GPU 60 帧（默认）"
+        ],
+        [
+          "software",
+          "软件渲染"
+        ]
+      ]
+    },
+    {
+      "key": "demo",
+      "label": "演示行驶",
+      "type": "choice",
+      "default": "auto",
+      "options": [
+        [
+          "auto",
+          "自动（等待车辆车速数据）"
+        ],
+        [
+          "on",
+          "始终"
+        ],
+        [
+          "off",
+          "从不"
+        ]
+      ]
+    }
+  ]
+}
